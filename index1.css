@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    opacity:9.8;
+}
+
+.upper-container{
+    width:50%;
+    height:10%;
+    margin:50px auto;
+    position:relative;
+   
+}
+.upper-container1{
+    width:35%;
+    height:100%;
+    padding-top:20px;
+    position:relative;
+    
+}
+#tasks{
+    font-weight: bold;
+    font-size:2.5rem;
+    font-family: 'Koh Santepheap', cursive;
+    
+}
+#lists{
+    font-size:2.5rem;
+    font-weight:50;
+    margin-left:10px;
+}
+.upper-container2{
+    width:30%;
+    height:100%;
+    padding-top:20px;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+#circle{
+    position:absolute;
+    width:10%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ 
+    top:0;
+}
+#circle i{
+    color:red;
+  
+}
+#addlist{
+    position:absolute;
+    width:80%;
+    height:100%;
+    top:0;
+    right:0;
+    font-size:25px;
+    padding-left:5px;
+    padding-top:25px;
+
+}
+.lower-container{
+    margin-top:10px;
+    border:1.5px solid red;
+    height:40vh;
+    margin:auto;
+    border-radius:8px;
+    width:20%;
+    box-shadow:5px 5px 10px grey;
+    position:relative;
+}
+.div1{
+    position:absolute;
+    top:15px;
+    font-size:25px;
+    width:85%;
+    text-align:left;
+    height:15%;
+    color:red;
+    border-bottom:1px solid black;
+    right:0;
+}
+.div2{
+    width:90%;
+    height:10%;
+    font-size:20px;
+    color:red;
+    text-align:right;
+    position:absolute;
+    font-weight:bold;
+    top:35%;
+    text-decoration:line-through;
+
+}
+.div3{
+    width:90%;
+    height:10%;
+    position:absolute;
+    text-align:left;
+    font-size:18px;
+    top:52%;
+}
+#check{
+    margin-left:10px;
+}
+.not-show{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.pop-up{
+    position:absolute;
+    height:12vw;
+    width:25%;
+    border:1.5px solid red;
+    border-radius:10px;
+    left:37%;
+    top:30%;
+    color:red;
+    font-size:18px;
+    padding:20px;
+    background-color:white;
+    
+}
+.pop-up1{
+    margin:15px auto;
+    border-radius:5px;
+    width:80%;
+    height:25%;
+    border:1.5px solid red;
+    box-shadow:1px 1px 3px grey;
+}
+.pop-up-button{
+    width:25%;
+    height:28%;
+    margin:15px auto;
+    color:white;
+    background-color:red;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+@media(max-width:800px){
+    .lower-container{
+        width:70%;        
+        height:15vw;
+        margin:auto;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+    
+    }
+    .div2{
+        display:none;
+    }
+    .div3{
+        display:none;
+
+    }
+    .div1{
+        border:none;
+        color:grey;
+
+    }
+    .upper-container{
+        width:80%;
+    }
+    #addlist{
+        display:none;
+    }
+    #circle{
+        right:0;
+    }
+    
+}
